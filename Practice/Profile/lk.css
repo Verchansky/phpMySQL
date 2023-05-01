@@ -168,22 +168,6 @@ body {
     margin-top: 10px;
 }
 
-.chooseFile
-{
-    width: 350px;
-    margin-top: 25px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(0, 188, 113);
-    border: 1px solid #E8E8E8;    
-}
-
-.chooseFile:hover
-{
-    -webkit-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
-}
 
 .data
 {
@@ -227,6 +211,9 @@ body {
     border-radius: 10px;
     background-color: rgb(0, 188, 113);
     border: 1px solid #E8E8E8; 
+    -webkit-box-shadow: 0px 10px 7px -1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 10px 7px -1px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 10px 7px -1px rgba(34, 60, 80, 0.2);
 }
 
 .Save:hover
@@ -234,4 +221,67 @@ body {
     -webkit-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+    
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	background-color: rgb(0, 188, 113);
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin: 0;
+    width: 352px;
+    border-radius: 10px;
+    color: black;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 10px 7px -1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 10px 7px -1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 10px 7px -1px rgba(34, 60, 80, 0.2);
+
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+/* Hover/active */
+.input-file:hover span {
+	-webkit-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.input-file:active span {
+	background-color: rgb(0, 188, 113);
+}
+
+#imgProf
+{
+    width: 350px;
+    margin-top: 50px;
+}
+
+#imgProfHead
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    margin-right: 35px;
+    border: 2px solid white;
 }
