@@ -12,11 +12,11 @@ if(empty($_COOKIE["login"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Profile.css">
+    <link href="Profile.css" type="text/css" rel="stylesheet">
     <title>Профиль</title>
 </head>
 <body>
-    
+    <!-- Header -->
     <nav class="navbar">
         <div class="container">
         <a class = 'navbar-logo'><b>Профиль</b></a>
@@ -29,10 +29,19 @@ if(empty($_COOKIE["login"])){
         </div>
     </nav>
 
-
+    <!-- Колонка кнопок слева -->
     <div class = menu-select>
+        <form method="post" class ="lkForm" action = './Profile/Lk.php'>
+            <button class = 'lkButt'><span>Личный кабинет</span></button>
+        </form>
+        <button class = 'OrderButt'>Заказы</button>
+        <button class = 'ChangePassButt'>...</button>
+        <button class = 'ChangePassButt'>...</button>    
+        <button class = 'ChangePassButt'>...</button>
 
     </div>
+
+
 
     <div class = menu-selected>
         

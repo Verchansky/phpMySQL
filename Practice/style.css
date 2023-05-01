@@ -2,6 +2,7 @@ body
 {
 	font-family: 'Noto Sans', sans-serif;
 }
+
 h2{
     text-align: center;
     padding-right: 80px;
@@ -49,6 +50,12 @@ label{
     padding-left: 7px;
 }
 
+.sumbit:hover
+{
+    background-color: rgb(0, 188, 113);
+    color: white;
+}
+
 a{
     font-size: 12px;
 }
@@ -61,6 +68,6 @@ p{
 
 body
 {
-    background-color: azure;
+    background-color: rgb(0, 188, 113);
 }
 
