@@ -31,18 +31,20 @@ if(!empty($_POST["email"]) && !empty($_POST["password"]))
             if($flag)
             {
 
-                $sqlInsert = "INSERT INTO users VALUES ('$email', '$password')";
+                $sqlInsert = "INSERT INTO users (Email, Password) VALUES ('$email', '$password')";
                 $InsertValues = $Connection->query($sqlInsert);
+
                 if($InsertValues > 0)
                 {
-                    $errorReg = "Пользователь создан!";
+                    $errorReg = "Ошибка! Пользователь не создан!";
+                    
                 }
                 else
                 {
-                    $errorReg = "Ошибка! Пользователь не создан!";
+                    $errorReg = "Пользователь создан!";
                 }
             } 
-            
+
             else
             {
                 $errorReg = "Пользователь уже существует!";
@@ -64,6 +66,8 @@ if(!empty($_POST["email"]) && !empty($_POST["password"]))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Регистарция</title>
 </head>
 <body>
@@ -79,7 +83,7 @@ if(!empty($_POST["email"]) && !empty($_POST["password"]))
          <div class="password">
             <label class = "PasswordText"><b>Password</b></label>
             <br>
-            <input type="password" class="PasswordInput" name = "password">
+            <input type="text" class="PasswordInput" name = "password">
         </div>
 
         <div class="buttonSumbit">
