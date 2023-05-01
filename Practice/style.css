@@ -1,0 +1,62 @@
+h2{
+    text-align: center;
+    padding-right: 80px;
+    
+}
+.container
+{
+    width: 382px;
+    margin: auto;
+    margin-top: 120px;
+    padding: 80px;
+    padding-right: 0px;
+    background: #e3e3e3;
+    border-radius: 15px ;
+    -webkit-box-shadow: 0px 17px 90px -6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 17px 90px -6px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 17px 90px -6px rgba(0, 0, 0, 0.28);
+}
+
+label{
+    font-size: 17px;
+}
+
+.emailInput{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+.PasswordInput{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+.sumbit
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 17px;
+    padding-left: 7px;
+}
+
+a{
+    font-size: 12px;
+}
+
+p{
+
+    font-size: 12px;
+    color: red;
+}
+
+body
+{
+    background-color: azure;
+}
+
