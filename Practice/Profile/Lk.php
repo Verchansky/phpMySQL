@@ -52,10 +52,17 @@
             <button class = 'lkButt' disabled>Личный кабинет</button>
         </form>
         <form method = "post" class = 'OrderBTN'>
-            <button class = 'OrderButt'>Заказы</button>
+            <button class = 'OrderButt'>Создать заказ</button>
         </form>
-        <button class = 'ChangePassButt'>...</button>
-        <button class = 'ChangePassButt'>...</button>  
+
+        <form action = "./PostZakaz/Zakaz.php" method = "POST">
+            <button id = 'menuButt' class = 'OrderButt1'>Поступившие заказы</button> 
+        </form>
+
+        <form action = "./WaitZakaz/WZakaz.php">
+            <button id = 'menuButt' class = 'OrderButt2'>Ожидающие заказы</button> 
+        </form>
+
         <form action="../profile.php" method="post" class = "BackFrom">
             <button class = 'BackBTN'>Назад</button>
         </form>

@@ -84,6 +84,7 @@ body {
     margin-left: 570px;
     margin-top: -555px;
     margin-right: 100px;
+    border: 0px solid;
 
 }
 
@@ -176,4 +177,86 @@ body {
 {
     color: #ffffff;
     background-color: rgb(0, 188, 113);
+}
+
+.lkButt1
+{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 35px;
+    font-size: 20px;
+    border: 2px solid #E8E8E8; 
+    background-color: rgb(0, 188, 113);
+    color: white;
+
+}
+
+
+#menuButt
+{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 35px;
+    font-size: 20px;
+    border: 2px solid #E8E8E8; 
+    background-color: white; 
+}
+
+.getOrder :hover
+{
+    color: #ffffff;
+    background-color: rgb(0, 188, 113);
+}
+
+table {
+    margin-top: 7px;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  thead th:nth-child(1) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 35%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 35%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 15%;
+  }
+  
+  th{
+    padding: 20px;
+  }
+
+  td
+  {
+    padding: 40px;
+    margin-bottom: 10px;
+    border: solid 1px #ccc;
+  }
+
+  tbody td {
+    text-align: center;
+  }
+
+table tr {
+    background-color: rgb(0, 188, 113);
+}
+ 
+table > tbody tr:nth-child(1) {
+    background-color: rgb(255, 255, 255);
 }

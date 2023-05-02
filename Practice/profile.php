@@ -1,8 +1,16 @@
 <?php
-if(empty($_COOKIE["login"])){
-    header('Location: index.php');
-    die();
-}
+
+    $Email = $_COOKIE["login"];
+    if(empty($_COOKIE["login"])){
+        header('Location: index.php');
+        die();
+    }
+
+    $Connection = new PDO("mysql:host = localhost;port=3306;dbname=practice", "root", "1234");
+    $data = $Connection->query("SELECT Path from users where Email = '$Email'");
+
+
+    $result = $data->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,17 +23,15 @@ if(empty($_COOKIE["login"])){
     <link href="Profile.css" type="text/css" rel="stylesheet">
     <title>Профиль</title>
 </head>
+
 <body>
-    <!-- Header -->
-    <nav class="navbar">
+     <!-- Header -->
+     <nav class="navbar">
         <div class="container">
         <a class = 'navbar-logo'><b>Профиль</b></a>
             <div class = "nawbar-wrap">
                 <a class = "user"><b>Пользователь: <?php echo $_COOKIE["login"]?></b></a>
-                <div class="wrapper exmpl">
-                    <img src = "./test3.jpg">
-                </div>
-            </div>
+                    <img  id = "imgProfHead" src="./Profile/img/<?php echo $result[0]["Path"]?>">
         </div>
     </nav>
 
@@ -34,10 +40,22 @@ if(empty($_COOKIE["login"])){
         <form method="post" class ="lkForm" action = './Profile/Lk.php'>
             <button class = 'lkButt'><span>Личный кабинет</span></button>
         </form>
-        <button class = 'OrderButt'>Заказы</button>
-        <button class = 'ChangePassButt'>...</button>
-        <button class = 'ChangePassButt'>...</button>    
-        <button class = 'ChangePassButt'>...</button>
+
+        <form>
+            <button class = 'OrderButt'>Создать заказ</button>
+        </form>
+
+        <form action = "./Profile/PostZakaz/Zakaz.php" method="post">
+            <button id = 'menuButt' class = 'OrderButt'>Поступившие заказы</button> 
+        </form>
+
+        <form action = "./Profile/WaitZakaz/WZakaz.php" method="post">
+            <button id = 'menuButt' class = 'OrderButt'>Ожидающие заказы</button> 
+        </form>
+
+        <form action="./exit.php" method="post">
+            <button class = 'BackBTN'>Выход</button>
+        </form>
 
     </div>
 
