@@ -41,7 +41,7 @@
             <button class = 'lkButt'><span>Личный кабинет</span></button>
         </form>
 
-        <form>
+        <form method = "POST" action = "./ProductsPage/ProductsPage.php">
             <button class = 'OrderButt'>Создать заказ</button>
         </form>
 

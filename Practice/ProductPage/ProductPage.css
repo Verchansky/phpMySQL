@@ -1,0 +1,139 @@
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    -webkit-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: rgb(0, 188, 113);
+}
+
+.navbar .container
+{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: 100px;
+}
+
+.nawbar-wrap
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.user
+{
+    display: flex;
+    align-items: center; 
+    margin-right: 30px;
+    color: white;
+    
+}  
+.wrapper {
+    margin: 0;
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    margin-right: 60px;
+  }
+
+  .exmpl img {
+    min-width: 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+  }
+.navbar-logo
+{
+    font-size: 30px;
+    color: white;
+    transition: transform 0.25s;
+}
+
+#imgProfHead
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    margin-right: 35px;
+    border: 2px solid white;
+}
+.navbar-logo:hover
+{
+    transform: scale(1.2);
+}
+
+.Products
+{
+    margin-top: 20px;
+    margin-left: 220px;
+    width: 1100px;
+}
+
+#imgProd
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid rgb(0,188,113);
+    -webkit-box-shadow: 0px 10px 13px 6px rgba(34, 60, 80, 0.07);
+    -moz-box-shadow: 0px 10px 13px 6px rgba(34, 60, 80, 0.07);
+    box-shadow: 0px 10px 13px 6px rgba(34, 60, 80, 0.07);
+}
+
+.product {  
+	margin-bottom: 30px;
+    margin-right: 12px;
+}
+
+
+.product-name {
+	display: block;
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.pr{
+    display: inline-block;
+}
+
+#buyBTN
+{
+    margin-top: 5px;
+    width: 250px;
+    height: 30px;
+    border: 0px solid;
+    background-color: rgb(0, 188, 113);;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 10px 13px 6px rgba(34, 60, 80, 0.07);
+    -moz-box-shadow: 0px 10px 13px 6px rgba(34, 60, 80, 0.07);
+    box-shadow: 0px 10px 13px 6px rgba(34, 60, 80, 0.07);   
+
+
+}
+
+.test :hover
+{
+    transform: scale(0.95);
+    transition: transform 0.25s;
+
+}
